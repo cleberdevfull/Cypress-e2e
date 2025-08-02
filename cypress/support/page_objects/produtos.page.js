@@ -1,25 +1,26 @@
-class ProdutosPage{
+class produtosPage {
 
-    visitarUrl(){
-        cy.visit('produtos') 
+    visitarUrl() {
+        cy.visit('produtos')
     }
 
-    buscarProduto(nomeProduto){
+    buscarProduto(nomeProduto) {
         cy.get('[name="s"]').eq(1).type(nomeProduto)
         cy.get('[type="submit"]').eq(1).click()
-       
+
     }
 
-    visitarProduto(){
-        cy.visit('product/balboa-persistence-tee/')
+    visitarProduto(nomeProduto) {
+        const urlFormatada = nomeProduto.replace(/ /g, '-');
+        cy.visit(`product/${urlFormatada}/`);
     }
 
-    addProdutoCarrinho(){
-        cy.get('.button-variable-item-XS').click()
-        cy.get('.button-variable-item-Green').click()
-        cy.get('.input-text').clear().type(4)
+    addProdutoCarrinho(tamanho, cor, quantidade) {
+        cy.get(`.button-variable-item-${tamanho}`).click()
+        cy.get(`.button-variable-item-${cor}`).click()
+        cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
     }
 }
 
-export default new ProdutosPage()
+export default new produtosPage()

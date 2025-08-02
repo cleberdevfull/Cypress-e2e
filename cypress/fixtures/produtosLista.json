@@ -1,0 +1,30 @@
+[
+    {
+        "url": "http://lojaebac.ebaconline.art.br/product/typhon-performance-fleece-lined-jacket/",
+        "nomeProduto": "Typhon Performance Fleece-lined Jacket",
+        "tamanho": "M",
+        "cor": "Green",
+        "quantidade": 2
+    },
+        {
+        "url": "http://lojaebac.ebaconline.art.br/product/zeppelin-yoga-pant/",
+        "nomeProduto": "Zeppelin Yoga Pant",
+        "tamanho": "36",
+        "cor": "Green",
+        "quantidade": 3
+    },
+        {
+        "url": "http://lojaebac.ebaconline.art.br/product/hawkeye-yoga-short/",
+        "nomeProduto": "Hawkeye Yoga Short",
+        "tamanho": "36",
+        "cor": "Gray",
+        "quantidade": 5
+    },
+        {
+        "url": "http://lojaebac.ebaconline.art.br/product/hero-hoodie/",
+        "nomeProduto": "Hero Hoodie",
+        "tamanho": "L",
+        "cor": "Gray",
+        "quantidade": 2
+    }
+]

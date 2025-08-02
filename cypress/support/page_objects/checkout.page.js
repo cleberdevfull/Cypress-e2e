@@ -44,6 +44,7 @@ class Checkout {
     }
 
     validandoCompra() {
+        cy.wait(3000)
         cy.url().should('include', '/order-received/');
         cy.contains('Obrigado. Seu pedido foi recebido.').should('be.visible');
         cy.get('.woocommerce-order-overview__order').should('contain', 'Número do pedido:');
