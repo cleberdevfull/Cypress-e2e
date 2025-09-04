@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-              "test": "npm run cy:run",
               "cy:run": "cypress run",
               "cy:open": "cypress open"
+              "test": "npm run cy:run",
               },
   "keywords": [],
   "author": "",
